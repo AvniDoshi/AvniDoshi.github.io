@@ -798,6 +798,54 @@ nav ul li a.active {
     justify-self: center;
 }
 
+.cycles-team-highlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(100%, 520px);
+    box-sizing: border-box;
+    margin: 1rem auto 2.25rem;
+    padding: 1rem;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.cycles-team-highlight img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 68vh;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.cycles-team-highlight figcaption {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.8rem 0.25rem 0.15rem;
+    color: #555866;
+    font-size: 0.78rem;
+}
+
+.cycles-gallery .gallery-portrait-fit {
+    width: min(100%, calc(29.72vh + 2rem));
+    box-sizing: border-box;
+    justify-self: center;
+}
+
+.cycles-gallery .gallery-portrait-fit img {
+    width: 100%;
+}
+
+@media (min-width: 769px) {
+    .cycles-gallery {
+        grid-template-columns: max-content minmax(0, 1fr);
+    }
+}
+
 .health-gallery {
     display: grid;
     gap: 1.5rem;
