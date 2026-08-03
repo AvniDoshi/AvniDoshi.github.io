@@ -378,20 +378,6 @@ nav ul li a.active {
     display: none;
 }
 
-.arrow-icon {
-    color: #555866;
-    font-size: 0;
-}
-
-.arrow-icon::after {
-    content: "↗";
-    font-size: 1.2rem;
-}
-
-.card:hover .arrow-icon {
-    color: #ffffff;
-}
-
 /* Tablet */
 
 @media (max-width: 1200px) {
