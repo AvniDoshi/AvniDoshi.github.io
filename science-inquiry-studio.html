@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Inquiry Studio - Avni Doshi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">Avni Doshi</a>
+        <nav aria-label="Main navigation"><ul><li><a href="about.html">About</a></li><li><a href="experience.html">Experience</a></li><li><a class="active" href="projects.html">Projects</a></li><li><a href="education.html">Education</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    </header>
+
+    <main class="case-study science-inquiry-case-study">
+        <a class="back-link" href="projects.html">&larr; All projects</a>
+        <section class="case-hero">
+            <h1>Science Inquiry Studio</h1>
+            <p>An AI-supported science learning platform designed to help middle school students build scientific understanding and practical AI literacy through inquiry-based activities.</p>
+            <a class="btn btn-primary case-hero-action" href="https://sinq.studio/" target="_blank" rel="noopener noreferrer">Visit Science Inquiry Studio</a>
+        </section>
+
+        <section class="case-section">
+            <h2>Overview</h2>
+            <div class="case-content">
+                <p>Science Inquiry Studio is a collaborative research and development project within UC Irvine's Digital Learning Lab. The platform is being created with researchers, software developers, curriculum designers, teachers, and students as part of the NSF-funded Computing and AI for All initiative.</p>
+                <p>The team is developing grade 6 through 8 science experiences aligned with California Science Standards while introducing students to data, AI systems, model limitations, and responsible technology use. The platform includes distinct student and teacher experiences supported by interactive investigations, classroom communication, progress tracking, and instructional insights.</p>
+            </div>
+        </section>
+
+        <section class="case-section">
+            <h2>My contribution</h2>
+            <div class="case-content">
+                <p>As a Software Development Engineer and Research Intern for <a class="inline-link" href="https://www.digitallearninglab.org/" target="_blank" rel="noopener noreferrer">UCI's Digital Learning Lab</a>, I lead the UI and interaction design for Science Inquiry Studio's student and teacher platforms. I designed both interfaces end to end, establishing the visual system, navigation architecture, information hierarchy, reusable components, and role-specific workflows that shape how students and educators use the product.</p>
+                <p>I work directly with teachers and researchers to translate classroom needs, curriculum goals, and California Science Standards into detailed product requirements. I lead the student-testing process, including planning studies, conducting sessions, evaluating usability, engagement, and comprehension, and translating the findings into prioritized interface and interaction improvements.</p>
+                <p>Beyond the core platforms, I help prototype and develop selected interactive science games and simulations. My work connects instructional goals with technical implementation so students can explore scientific systems through experimentation, immediate feedback, and data interpretation.</p>
+            </div>
+        </section>
+
+        <section class="case-section"><h2>Student platform</h2><div class="case-content"><p>The student experience organizes assigned activities, progress, achievements, and teacher communication in an approachable interface. Activities use checkpoints, feedback, and game-based exploration to help students practice scientific reasoning while building confidence with AI-supported learning tools.</p></div></section>
+        <section class="project-gallery science-gallery flashcard-gallery" data-flashcard-gallery aria-label="Science Inquiry Studio student platform and activities">
+            <figure class="is-active"><img src="images/science-inquiry-studio/student-activities.png" alt="Science Inquiry Studio student activities dashboard"><figcaption>Student activities dashboard with class filters, progress, points, and assigned investigations</figcaption></figure>
+            <figure><img src="images/science-inquiry-studio/student-achievements.png" alt="Science Inquiry Studio student achievements screen"><figcaption>Achievement system recognizing progress across scientific inquiry and evidence-based reasoning</figcaption></figure>
+            <figure><img src="images/science-inquiry-studio/student-messages.png" alt="Science Inquiry Studio student and teacher messaging screen"><figcaption>Class-based messaging that connects students with teachers during investigations</figcaption></figure>
+            <figure><img src="images/science-inquiry-studio/activity-water-cycle.png" alt="Interactive Water Cycle Quest activity"><figcaption>Water Cycle Quest, an interactive investigation of evaporation, condensation, precipitation, and energy transfer</figcaption></figure>
+            <figure><img src="images/science-inquiry-studio/activity-cell-membrane.png" alt="Interactive cell membrane transport activity"><figcaption>Interactive cell membrane activity for exploring molecular transport and biological systems</figcaption></figure>
+            <div class="flashcard-controls"><button type="button" data-gallery-previous aria-label="Show previous student platform screen">&#8249;</button><span data-gallery-status aria-live="polite">1 of 5</span><button type="button" data-gallery-next aria-label="Show next student platform screen">&#8250;</button></div>
+        </section>
+
+        <section class="case-section"><h2>Teacher platform</h2><div class="case-content"><p>The teacher experience gives educators a clear view of class activity, completion, student questions, misconceptions, and areas requiring support. Teachers can manage classes, assign activities, review progress, see and address student questions, and use instructional insights to respond to student needs.</p></div></section>
+        <section class="project-gallery science-gallery flashcard-gallery" data-flashcard-gallery aria-label="Science Inquiry Studio teacher platform">
+            <figure class="is-active"><img src="images/science-inquiry-studio/teacher-dashboard.png" alt="Science Inquiry Studio teacher dashboard"><figcaption>Teacher dashboard summarizing classes, assigned activities, student questions, and submissions requiring review</figcaption></figure>
+            <figure><img src="images/science-inquiry-studio/teacher-classes.png" alt="Science Inquiry Studio teacher classes overview"><figcaption>Class management view with completion rates, active activities, and attention indicators</figcaption></figure>
+            <figure><img src="images/science-inquiry-studio/teacher-class-detail.png" alt="Science Inquiry Studio teacher class details and insights"><figcaption>Class-level analytics highlighting progress, common misconceptions, difficult checkpoints, and requested hints</figcaption></figure>
+            <div class="flashcard-controls"><button type="button" data-gallery-previous aria-label="Show previous teacher platform screen">&#8249;</button><span data-gallery-status aria-live="polite">1 of 3</span><button type="button" data-gallery-next aria-label="Show next teacher platform screen">&#8250;</button></div>
+        </section>
+
+        <section class="case-section"><h2>Tech stack</h2><div class="tech-list"><span>Next.js</span><span>React</span><span>TypeScript</span><span>Tailwind CSS</span><span>MongoDB</span><span>Mongoose</span><span>NextAuth</span><span>Gemini API</span><span>Qdrant</span></div></section>
+    </main>
+    <script src="gallery.js"></script>
+</body>
+</html>

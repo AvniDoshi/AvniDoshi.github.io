@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Avni Doshi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><a class="logo" href="index.html">Avni Doshi</a><nav aria-label="Main navigation"><ul>
+        <li><a href="about.html">About</a></li><li><a href="experience.html">Experience</a></li><li><a href="projects.html">Projects</a></li><li><a href="education.html">Education</a></li><li><a class="active" aria-current="page" href="contact.html">Contact</a></li>
+    </ul></nav></header>
+    <main class="contact-page">
+        <section class="contact-heading">
+            <h1>Let’s work together!</h1>
+            <p>Have an opportunity or project in mind? Send me a message or schedule a conversation.</p>
+        </section>
+
+        <div class="contact-layout">
+            <section class="contact-links" aria-label="Professional links">
+                <a href="https://www.linkedin.com/in/avni-doshi/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><small>Connect professionally</small></a>
+                <a href="https://github.com/AvniDoshi" target="_blank" rel="noopener noreferrer"><span>GitHub</span><small>View my code</small></a>
+                <a href="https://cal.com/avnidoshi" target="_blank" rel="noopener noreferrer"><span>Meet with me</span><small>Schedule a conversation</small></a>
+            </section>
+
+            <section class="contact-form-section">
+                <h2>Send a message</h2>
+                <form class="contact-form" id="contact-form" enctype="multipart/form-data">
+                    <div class="form-row">
+                        <label for="contact-name">Name</label>
+                        <input id="contact-name" name="name" type="text" autocomplete="name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="contact-email">Your email</label>
+                        <input id="contact-email" name="email" type="email" autocomplete="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="contact-subject">Subject</label>
+                        <input id="contact-subject" name="subject" type="text" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="message" rows="7" required></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">Attachments <span class="optional-badge">Optional</span></div>
+                        <div class="file-picker">
+                            <input class="visually-hidden-file-input" id="contact-files" name="attachments" type="file" multiple accept="image/*,.pdf,.doc,.docx,.txt" aria-describedby="attachment-help attachment-summary">
+                            <label class="file-picker-button" for="contact-files">Add files</label>
+                            <span id="attachment-summary">No files selected</span>
+                        </div>
+                        <ul class="selected-files" id="selected-files" aria-live="polite"></ul>
+                        <small id="attachment-help">Images, PDFs, documents, or text files</small>
+                    </div>
+                    <button class="btn btn-primary" type="submit" disabled>Send message</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <script src="contact.js"></script>
+</body>
+</html>

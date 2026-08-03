@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cycles - Avni Doshi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">Avni Doshi</a>
+        <nav aria-label="Main navigation"><ul><li><a href="about.html">About</a></li><li><a href="experience.html">Experience</a></li><li><a class="active" href="projects.html">Projects</a></li><li><a href="education.html">Education</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    </header>
+
+    <main class="case-study cycles-case-study">
+        <a class="back-link" href="projects.html">← All projects</a>
+
+        <section class="case-hero">
+            <h1>Cycles</h1>
+            <p>A full-stack women’s healthcare platform developed during my software engineering internship at Quadrant Technologies.</p>
+            <a class="btn btn-secondary case-hero-action" href="https://github.com/AvniDoshi/Cycles" target="_blank" rel="noopener noreferrer">View GitHub repository</a>
+        </section>
+
+        <section class="case-section">
+            <h2>Overview</h2>
+            <div class="case-content">
+                <p>Cycles helps users track menstrual health and pregnancy information through personalized forecasts generated from individual health data and research-backed cycle patterns. The platform was designed to make complex health information easier to understand through an accessible daily tracking experience.</p>
+                <p>The application supported more than 250 users and placed second among 13 internship teams for product impact and technical execution.</p>
+            </div>
+        </section>
+
+        <section class="case-section">
+            <h2>What I built</h2>
+            <div class="case-content">
+                <p>I led front-end development of the React application and connected the interface to REST API services and an Azure SQL Server database. The system collected user health information, processed it through prediction logic, and returned personalized cycle and pregnancy insights through an interactive calendar and daily tracker.</p>
+                <p>I also developed ETL workflows with Azure Data Factory and Azure Databricks to transform raw health data, validate its quality, and support reliable ingestion. The application followed an end-to-end software development lifecycle in Azure DevOps, including requirements, implementation, testing, CI/CD deployment, and maintenance.</p>
+            </div>
+        </section>
+
+        <section class="project-gallery cycles-gallery" aria-label="Cycles application screens">
+            <figure class="gallery-wide"><img src="images/cycles/daily-tracker.jpg" alt="Cycles daily tracker showing a calendar and predicted menstrual cycle phases"><figcaption>Daily tracker with personalized cycle phases and pregnancy mode</figcaption></figure>
+            <figure><img src="images/cycles/profile-form.jpg" alt="Cycles health profile form for personalized predictions"><figcaption>Health profile intake for personalized predictions</figcaption></figure>
+            <figure><img src="images/cycles/about-cycles.jpg" alt="Cycles application introduction screen"><figcaption>Product introduction and menstrual-health education</figcaption></figure>
+        </section>
+
+        <section class="case-section">
+            <h2>Tech stack</h2>
+            <div class="tech-list"><span>React</span><span>REST APIs</span><span>Azure SQL Server</span><span>Azure Data Factory</span><span>Azure Databricks</span><span>Azure DevOps</span><span>CI/CD</span></div>
+        </section>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solace - Avni Doshi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">Avni Doshi</a>
+        <nav aria-label="Main navigation"><ul><li><a href="about.html">About</a></li><li><a href="experience.html">Experience</a></li><li><a class="active" href="projects.html">Projects</a></li><li><a href="education.html">Education</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    </header>
+
+    <main class="case-study solace-case-study">
+        <a class="back-link" href="projects.html">← All projects</a>
+
+        <section class="case-hero">
+            <h1>Solace</h1>
+            <p>A research-driven mobile wellness experience designed to help young adults understand emotional patterns, reflect consistently, and access practical support.</p>
+            <a class="btn btn-primary case-hero-action" href="https://scan-lilac-99932909.figma.site" target="_blank" rel="noopener noreferrer">Open live prototype</a>
+        </section>
+
+        <section class="case-section">
+            <h2>Overview</h2>
+            <div class="case-content">
+                <p>Solace was developed as a group project exploring how anxiety, sleep habits, and stress-management practices shape the daily mental wellness of young adults. Rather than isolating a single wellness feature, the product brings mood tracking, sleep awareness, guided reflection, personalized insights, community support, and coping activities into one cohesive experience.</p>
+                <p>The design prioritizes privacy and low-friction daily use. Anonymous participation, clear data visualizations, large touch targets, and a persistent mobile navigation system help users engage with sensitive wellness information in a comfortable and approachable way.</p>
+            </div>
+        </section>
+
+        <section class="case-section">
+            <h2>Research and design</h2>
+            <div class="case-content">
+                <p>Our team conducted semi-structured interviews with college students and recent graduates to understand recurring stressors, coping strategies, barriers to support, and expectations for mental wellness technology. We analyzed the interviews for shared themes, including academic pressure, future uncertainty, mental-health stigma, inconsistent sleep, social comparison, and demand for personalized reflection tools.</p>
+                <p>I took a leading role in translating the research into the product’s interaction architecture and visual direction. I synthesized user needs into feature requirements, created the initial multi-screen prototype, and drove the interface from early wireframes through the final mobile-first experience in Figma. My work established the core navigation, screen hierarchy, daily check-in flow, reflection experience, and visual system used across the prototype.</p>
+            </div>
+        </section>
+
+        <section class="case-section">
+            <h2>What I designed</h2>
+            <div class="case-content">
+                <p>I designed the primary user flows and a substantial portion of the final interface, focusing on quick daily engagement without overwhelming the user. The home dashboard surfaces mood, sleep, streaks, and reflection prompts at a glance, while the check-in flow captures emotional state, current concerns, physical signals, notes, and sleep quality.</p>
+                <p>I also developed the journal and activities experiences, including guided reflection prompts and structured breathing, grounding, affirmation, and body-scan exercises. Across the product, I applied a consistent hierarchy, calming visual language, predictable navigation, and accessible mobile interaction patterns.</p>
+            </div>
+        </section>
+
+        <section class="case-section">
+            <h2>Design evolution</h2>
+            <div class="case-content">
+                <p>I created an early multi-screen prototype to establish the product’s information architecture and test the relationship between check-ins, insights, journaling, and sleep support. As our team gathered feedback, I refined the navigation, simplified dense screens, increased touch-target sizes, strengthened visual hierarchy, and expanded the experience to include community and guided wellness activities.</p>
+                <figure class="prototype-evolution"><img src="images/solace/early-prototype.png" alt="Early five-screen Solace prototype showing the home dashboard, mood check-in, insights, journal, and sleep reminders"><figcaption>Early Solace prototype used to evaluate the core feature set and navigation model</figcaption></figure>
+            </div>
+        </section>
+
+        <section class="project-gallery solace-gallery flashcard-gallery" data-flashcard-gallery aria-label="Solace mobile application screens">
+            <figure class="is-active"><img src="images/solace/home.png" alt="Solace home dashboard with wellness check-in and summary cards"><figcaption>Home dashboard with daily check-in, mood, sleep, and reflection summaries</figcaption></figure>
+            <figure><img src="images/solace/check-in.png" alt="Solace daily wellness check-in interface"><figcaption>Structured check-in for mood, stressors, physical signals, and sleep</figcaption></figure>
+            <figure><img src="images/solace/journal.png" alt="Solace guided journal interface"><figcaption>Guided journal prompts designed to support consistent reflection</figcaption></figure>
+            <figure><img src="images/solace/activities.png" alt="Solace wellness activities and anxiety tips interface"><figcaption>Self-care activities and practical anxiety-management resources</figcaption></figure>
+            <div class="flashcard-controls">
+                <button type="button" data-gallery-previous aria-label="Show previous Solace screen">&#8249;</button>
+                <span data-gallery-status aria-live="polite">1 of 4</span>
+                <button type="button" data-gallery-next aria-label="Show next Solace screen">&#8250;</button>
+            </div>
+        </section>
+
+        <section class="case-section">
+            <h2>Tech stack</h2>
+            <div class="tech-list"><span>Figma</span><span>User Research</span><span>Wireframing</span><span>Interactive Prototyping</span><span>Thematic Analysis</span></div>
+        </section>
+    </main>
+    <script src="gallery.js"></script>
+</body>
+</html>

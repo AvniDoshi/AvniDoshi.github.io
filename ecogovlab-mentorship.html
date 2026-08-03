@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoGovLab Mentorship - Avni Doshi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">Avni Doshi</a>
+        <nav aria-label="Main navigation"><ul><li><a href="about.html">About</a></li><li><a href="experience.html">Experience</a></li><li><a class="active" href="projects.html">Projects</a></li><li><a href="education.html">Education</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    </header>
+
+    <main class="case-study ecogov-case-study">
+        <a class="back-link" href="projects.html">← All projects</a>
+
+        <section class="case-hero ecogov-hero">
+            <h1>EcoGovLab Mentorship</h1>
+            <p>Led technical instruction and guided project development for an environmental data visualization internship.</p>
+        </section>
+
+        <section class="case-section">
+            <h2>Overview</h2>
+            <div class="case-content">
+                <p>While mentoring an internship cohort for <a class="inline-link" href="https://ecogovlab.socsci.uci.edu/" target="_blank" rel="noopener noreferrer">UCI's EcoGovLab</a>, I guided the development of an environmental data visualization application powered by public REST APIs. Throughout the program, I taught Python, R, SQL, Matplotlib, and foundational data visualization practices.</p>
+                <p>I guided the interns through API integration, data processing, analytical problem-solving, and visualization design. I also supported code review and data validation to help the team produce accurate, research-ready visualizations that communicated environmental trends clearly.</p>
+            </div>
+        </section>
+
+        <section class="case-section">
+            <h2>Final code produced</h2>
+            <div class="case-content">
+                <p>The final Python application developed by one of the interns retrieves weather and pollution data from public APIs based on a user’s selected date range, location, and environmental-data preferences. It processes the results and graphs monthly or yearly averages that researchers can use for further analysis.</p>
+                <a class="btn btn-primary download-button" href="EcoGovLab-Final-Code.py" target="_blank" rel="noopener noreferrer">Open final code</a>
+            </div>
+        </section>
+
+        <section class="project-gallery ecogov-gallery" aria-label="Environmental data visualizations">
+            <figure><img src="images/ecogovlab/temperature-precipitation-texas.jpg" alt="Scatter plot comparing temperature and precipitation in Calhoun County, Texas"><figcaption>Temperature and precipitation analysis for Calhoun County, Texas</figcaption></figure>
+            <figure><img src="images/ecogovlab/daily-precipitation-california.jpg" alt="Scatter plot of total daily precipitation in Central Valley, California"><figcaption>Daily precipitation analysis for California’s Central Valley</figcaption></figure>
+            <figure class="gallery-wide"><img src="images/ecogovlab/temperature-precipitation-hurricanes.jpg" alt="Temperature and precipitation visualizations showing Hurricanes Matthew and Florence in Robeson County, North Carolina"><figcaption>Temperature and precipitation trends surrounding Hurricanes Matthew and Florence</figcaption></figure>
+        </section>
+
+        <section class="case-section">
+            <h2>Tech stack</h2>
+            <div class="tech-list"><span>Python</span><span>Matplotlib</span></div>
+        </section>
+    </main>
+</body>
+</html>
