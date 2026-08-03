@@ -1769,7 +1769,15 @@ nav ul li a.active {
     transform: none;
 }
 
-.form-status { font-size: 0.78rem; }
+.form-status {
+    min-height: 1.2em;
+    margin: 0;
+    color: var(--muted-text);
+    font-size: 0.78rem;
+}
+
+.form-status.success { color: #8fd3a5; }
+.form-status.error { color: #f0a0a8; }
 
 @media (max-width: 760px) {
     .contact-layout { grid-template-columns: 1fr; }

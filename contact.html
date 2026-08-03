@@ -25,7 +25,7 @@
 
             <section class="contact-form-section">
                 <h2>Send a message</h2>
-                <form class="contact-form" id="contact-form" enctype="multipart/form-data">
+                <form class="contact-form" id="contact-form" action="https://usebasin.com/f/1682ce97936c" method="POST" enctype="multipart/form-data">
                     <div class="form-row">
                         <label for="contact-name">Name</label>
                         <input id="contact-name" name="name" type="text" autocomplete="name" required>
@@ -45,14 +45,15 @@
                     <div class="form-row">
                         <div class="form-label">Attachments <span class="optional-badge">Optional</span></div>
                         <div class="file-picker">
-                            <input class="visually-hidden-file-input" id="contact-files" name="attachments" type="file" multiple accept="image/*,.pdf,.doc,.docx,.txt" aria-describedby="attachment-help attachment-summary">
+                            <input class="visually-hidden-file-input" id="contact-files" name="attachments[]" type="file" multiple accept="image/*,.pdf,.doc,.docx,.txt" aria-describedby="attachment-help attachment-summary">
                             <label class="file-picker-button" for="contact-files">Add files</label>
                             <span id="attachment-summary">No files selected</span>
                         </div>
                         <ul class="selected-files" id="selected-files" aria-live="polite"></ul>
                         <small id="attachment-help">Images, PDFs, documents, or text files</small>
                     </div>
-                    <button class="btn btn-primary" type="submit" disabled>Send message</button>
+                    <button class="btn btn-primary" type="submit">Send message</button>
+                    <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
                 </form>
             </section>
         </div>

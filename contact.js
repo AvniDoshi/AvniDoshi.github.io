@@ -1,6 +1,9 @@
 const fileInput = document.querySelector('#contact-files');
 const fileSummary = document.querySelector('#attachment-summary');
 const selectedFilesList = document.querySelector('#selected-files');
+const contactForm = document.querySelector('#contact-form');
+const submitButton = contactForm.querySelector('button[type="submit"]');
+const formStatus = document.querySelector('#form-status');
 let selectedFiles = [];
 
 const fileKey = (file) => `${file.name}-${file.size}-${file.lastModified}`;
@@ -58,4 +61,34 @@ fileInput.addEventListener('change', () => {
     });
     syncInputFiles();
     renderSelectedFiles();
+});
+
+contactForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending...';
+    formStatus.className = 'form-status';
+    formStatus.textContent = 'Sending your message...';
+
+    try {
+        const response = await fetch(contactForm.action, {
+            method: 'POST',
+            body: new FormData(contactForm),
+            headers: { Accept: 'application/json' }
+        });
+
+        if (!response.ok) throw new Error('Submission failed');
+
+        contactForm.reset();
+        selectedFiles = [];
+        renderSelectedFiles();
+        formStatus.className = 'form-status success';
+        formStatus.textContent = 'Your message was sent successfully. Thank you!';
+    } catch (error) {
+        formStatus.className = 'form-status error';
+        formStatus.textContent = 'Your message could not be sent. Please try again.';
+    } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = 'Send message';
+    }
 });
