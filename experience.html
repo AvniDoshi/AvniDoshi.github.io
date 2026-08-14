@@ -5,18 +5,21 @@
     <title>Experience - Avni Doshi</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css?v=20260814-1">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css?v=20260814-3">
 </head>
 <body>
     <header><a class="logo" href="/">Avni Doshi</a><nav aria-label="Main navigation"><ul>
         <li><a class="active" aria-current="page" href="experience.html">Experience</a></li><li><a href="projects.html">Projects</a></li><li><a href="education.html">Education</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li>
     </ul></nav></header>
     <main class="experience-page">
-        <nav class="experience-jump-nav" aria-label="Experience sections">
-            <a href="#job-experience">Job experience</a>
-            <a href="#conferences">Conferences</a>
-            <a href="#volunteer-impact">Volunteer impact</a>
-        </nav>
+        <div class="experience-layout">
+            <nav class="experience-jump-nav" aria-label="Experience sections">
+                <a href="#job-experience">Job experience</a>
+                <a href="#conferences">Conferences</a>
+                <a href="#volunteer-impact">Volunteer impact</a>
+            </nav>
+
+            <div class="experience-content">
 
         <section class="experience-section jobs-section" id="job-experience">
             <div class="section-heading"><p class="page-eyebrow">Job experience</p></div>
@@ -48,7 +51,7 @@
 
                 <article class="experience-card">
                     <div class="experience-card-heading">
-                        <div><h2>Data Visualization Lead</h2><p><a class="inline-link" href="https://ecogovlab.socsci.uci.edu/" target="_blank" rel="noopener noreferrer">UC Irvine EcoGovLab</a></p></div>
+                        <div><h2>Data Visualization Lead</h2><p><a class="inline-link" href="https://ecogovlab.socsci.uci.edu/" target="_blank" rel="noopener noreferrer">UC Irvine EcoGovLab</a> · <a class="inline-link" href="https://ecogovlab.socsci.uci.edu/lab-members/" target="_blank" rel="noopener noreferrer">Team listing</a></p></div>
                         <time datetime="2025-06/2025-08">Jun 2025 – Aug 2025</time>
                     </div>
                     <ul>
@@ -63,7 +66,7 @@
                         <time datetime="2024-07/2024-08">Jul 2024 – Aug 2024</time>
                     </div>
                     <ul>
-                        <li>Developed and deployed Cycles, a full-stack women’s healthcare application that processed health data to generate personalized cycle and pregnancy predictions for more than 250 users; placed second among 13 teams for product impact and technical execution.</li>
+                        <li>Developed and deployed <a class="inline-link" href="https://github.com/AvniDoshi/Cycles" target="_blank" rel="noopener noreferrer">Cycles</a>, a full-stack women’s healthcare application that processed health data to generate personalized cycle and pregnancy predictions for more than 250 users; placed second among 13 teams for product impact and technical execution.</li>
                         <li>Built the application with React, REST APIs, Azure SQL Server, and Azure DevOps using Agile workflows and end-to-end software development practices.</li>
                         <li>Created ETL pipelines with Azure Data Factory and Azure Databricks to transform raw health data, validate quality, and support accurate ingestion.</li>
                         <li>Led front-end development in React and deployed the application through an Azure DevOps CI/CD pipeline.</li>
@@ -72,7 +75,7 @@
 
                 <article class="experience-card">
                     <div class="experience-card-heading">
-                        <div><h2>Undergraduate Researcher</h2><p><a class="inline-link" href="https://ecogovlab.socsci.uci.edu/" target="_blank" rel="noopener noreferrer">UC Irvine EcoGovLab</a></p></div>
+                        <div><h2>Undergraduate Researcher</h2><p><a class="inline-link" href="https://ecogovlab.socsci.uci.edu/" target="_blank" rel="noopener noreferrer">UC Irvine EcoGovLab</a> · <a class="inline-link" href="https://ecogovlab.socsci.uci.edu/lab-members/" target="_blank" rel="noopener noreferrer">Team listing</a></p></div>
                         <time datetime="2024-02">Feb 2024 – Present</time>
                     </div>
                     <ul>
@@ -135,6 +138,8 @@
                 </article>
             </div>
         </section>
+            </div>
+        </div>
     </main>
 </body>
 </html>

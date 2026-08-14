@@ -1504,10 +1504,21 @@ nav ul li a.active {
     padding: 2rem 0 8rem;
 }
 
+.experience-layout {
+    display: grid;
+    grid-template-columns: minmax(150px, 180px) minmax(0, 1fr);
+    gap: 3rem;
+    align-items: start;
+}
+
+.experience-content {
+    min-width: 0;
+}
+
 .experience-section {
     padding: 3.25rem 0;
     border-top: 1px solid var(--surface-border);
-    scroll-margin-top: 2rem;
+    scroll-margin-top: 6.5rem;
 }
 
 .jobs-section {
@@ -1516,26 +1527,30 @@ nav ul li a.active {
 }
 
 .experience-jump-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.65rem;
-    padding-bottom: 0.5rem;
+    position: sticky;
+    top: 6.25rem;
+    display: grid;
+    gap: 0.25rem;
+    padding: 2rem 0;
+    border-left: 1px solid var(--surface-border);
 }
 
 .experience-jump-nav a {
-    padding: 0.4rem 0.7rem;
+    margin-left: -1px;
+    padding: 0.65rem 0.9rem;
     color: var(--muted-text);
-    background: var(--surface);
-    border: 1px solid var(--surface-border);
-    border-radius: 7px;
-    font-size: 0.78rem;
-    transition: color 0.2s ease, border-color 0.2s ease;
+    border-left: 2px solid transparent;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.85rem;
+    line-height: 1.35;
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .experience-jump-nav a:hover,
 .experience-jump-nav a:focus-visible {
     color: var(--text);
-    border-color: #55596b;
+    background: var(--surface);
+    border-left-color: var(--accent);
     outline: none;
 }
 
@@ -1583,6 +1598,38 @@ nav ul li a.active {
 
 .experience-card li {
     line-height: 1.7;
+}
+
+@media (max-width: 850px) {
+    .experience-layout {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .experience-jump-nav {
+        position: static;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.5rem;
+        padding: 0 0 1rem;
+        border-left: 0;
+        border-bottom: 1px solid var(--surface-border);
+    }
+
+    .experience-jump-nav a {
+        margin-left: 0;
+        padding: 0.6rem 0.45rem;
+        text-align: center;
+        background: var(--surface);
+        border: 1px solid var(--surface-border);
+        border-radius: 8px;
+    }
+
+    .experience-jump-nav a:hover,
+    .experience-jump-nav a:focus-visible {
+        border-color: var(--accent);
+    }
+
+    .jobs-section { padding-top: 1.5rem; }
 }
 
 @media (max-width: 650px) {
