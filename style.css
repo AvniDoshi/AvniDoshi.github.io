@@ -251,7 +251,7 @@ nav ul li a.active {
 
     object-fit: contain;
     object-position: center bottom;
-    transform: translate(-1.25rem, -0.75rem);
+    transform: translate(-1.25rem, -1.5rem);
 
     -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 82%, transparent 100%);
     mask-image: linear-gradient(to bottom, #000 0%, #000 82%, transparent 100%);
