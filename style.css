@@ -1530,18 +1530,26 @@ nav ul li a.active {
     position: sticky;
     top: 6.25rem;
     display: grid;
-    gap: 0.25rem;
-    padding: 0.45rem;
-    background: var(--surface);
-    border: 1px solid var(--surface-border);
-    border-radius: 12px;
+    gap: 0.15rem;
+    padding: 0.35rem 0;
+}
+
+.experience-jump-nav::before {
+    content: "";
+    position: absolute;
+    top: 0.8rem;
+    bottom: 0.8rem;
+    left: 0;
+    width: 1px;
+    background: var(--surface-border);
 }
 
 .experience-jump-nav a {
-    padding: 0.65rem 0.75rem;
+    position: relative;
+    padding: 0.55rem 0.85rem 0.55rem 1rem;
     color: var(--muted-text);
-    border: 1px solid transparent;
-    border-radius: 8px;
+    border-left: 2px solid transparent;
+    border-radius: 0 7px 7px 0;
     font-size: 0.85rem;
     line-height: 1.35;
     transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
@@ -1550,8 +1558,8 @@ nav ul li a.active {
 .experience-jump-nav a:hover,
 .experience-jump-nav a:focus-visible {
     color: var(--text);
-    background: #191b25;
-    border-color: #343748;
+    background: rgba(19, 20, 28, 0.72);
+    border-left-color: var(--accent);
     outline: none;
 }
 
@@ -1617,6 +1625,8 @@ nav ul li a.active {
         border-bottom: 1px solid var(--surface-border);
         border-radius: 0;
     }
+
+    .experience-jump-nav::before { display: none; }
 
     .experience-jump-nav a {
         margin-left: 0;
