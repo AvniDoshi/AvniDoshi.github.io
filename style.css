@@ -641,13 +641,28 @@ nav ul li a.active {
     padding: 1.25rem;
 }
 
-.project-card-copy h2 {
+.project-card-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
     margin-bottom: 0.5rem;
+}
+
+.project-card-copy h2 {
     font-size: 1.1rem;
 }
 
+.project-card-date {
+    flex: 0 0 auto;
+    color: var(--muted-text);
+    font-size: 0.78rem;
+    white-space: nowrap;
+}
+
 .project-card-copy p,
-.case-section p {
+.case-section p,
+.case-subsection p {
     color: var(--muted-text);
 }
 
@@ -707,7 +722,24 @@ nav ul li a.active {
     font-size: 1.35rem;
 }
 
-.case-section p {
+.case-subsection {
+    padding: 1rem 0 1.5rem;
+}
+
+.case-subsection h3,
+.case-content h3 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.case-subsection .case-content {
+    padding-left: 1.25rem;
+    border-left: 2px solid var(--surface-border);
+}
+
+.case-section p,
+.case-subsection p {
     max-width: none;
     font-size: 1.05rem;
     line-height: 1.8;
