@@ -1531,16 +1531,17 @@ nav ul li a.active {
     top: 6.25rem;
     display: grid;
     gap: 0.25rem;
-    padding: 2rem 0;
-    border-left: 1px solid var(--surface-border);
+    padding: 0.45rem;
+    background: var(--surface);
+    border: 1px solid var(--surface-border);
+    border-radius: 12px;
 }
 
 .experience-jump-nav a {
-    margin-left: -1px;
-    padding: 0.65rem 0.9rem;
+    padding: 0.65rem 0.75rem;
     color: var(--muted-text);
-    border-left: 2px solid transparent;
-    border-radius: 0 8px 8px 0;
+    border: 1px solid transparent;
+    border-radius: 8px;
     font-size: 0.85rem;
     line-height: 1.35;
     transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
@@ -1549,8 +1550,8 @@ nav ul li a.active {
 .experience-jump-nav a:hover,
 .experience-jump-nav a:focus-visible {
     color: var(--text);
-    background: var(--surface);
-    border-left-color: var(--accent);
+    background: #191b25;
+    border-color: #343748;
     outline: none;
 }
 
@@ -1611,8 +1612,10 @@ nav ul li a.active {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 0.5rem;
         padding: 0 0 1rem;
-        border-left: 0;
+        background: transparent;
+        border: 0;
         border-bottom: 1px solid var(--surface-border);
+        border-radius: 0;
     }
 
     .experience-jump-nav a {
