@@ -786,11 +786,6 @@ nav ul li a.active {
     line-height: 1.7;
 }
 
-.download-button {
-    justify-self: start;
-    margin-top: 0.5rem;
-}
-
 .ecogov-gallery,
 .cycles-gallery {
     display: grid;
