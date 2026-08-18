@@ -21,51 +21,54 @@
 
         <section class="case-hero">
             <h1>WRITE AI Center</h1>
-            <p>A complete digital presence for a national research center studying how generative AI can improve writing instruction in postsecondary education.</p>
+            <p>A production web platform for a national research center studying how generative AI can improve writing instruction in postsecondary education.</p>
             <div class="case-hero-actions">
                 <a class="btn btn-primary" href="https://writeai.center/" target="_blank" rel="noopener noreferrer">Visit WRITE AI Center</a>
+                <a class="btn btn-secondary" href="https://writeai.center/people/avni-doshi" target="_blank" rel="noopener noreferrer">View my WRITE AI profile</a>
             </div>
         </section>
 
         <section class="case-section">
             <h2>Overview</h2>
             <div class="case-content">
-                <p>WRITE AI brings together researchers, educators, institutional partners, and technology developers to build evidence for effective, responsible, and equitable uses of generative AI in writing education.</p>
-                <p>The website serves as the Center's public home, connecting its research, PapyrusAI platform, training and events, resources, news, people, and partner organizations in one cohesive experience.</p>
+                <p>WRITE AI is a national research center focused on effective, responsible, and equitable applications of generative AI in postsecondary writing education. Its public website needed to support multiple audiences while organizing research, PapyrusAI, training, resources, news, people, and partner organizations within a maintainable technical system.</p>
+                <p>I delivered the platform as a responsive React and TypeScript application with reusable route patterns, structured content models, an interactive AI-tools directory, accessible navigation, and a Cloudflare deployment architecture.</p>
             </div>
         </section>
 
         <section class="case-section">
             <h2>What I did</h2>
             <div class="case-content">
-                <p>I designed and built the entire working website from end to end. I established the visual direction, information architecture, responsive layouts, typography, color system, navigation, reusable components, and interaction patterns across the full site.</p>
-                <p>I translated the Center's research mission and extensive institutional content into clear pathways for different audiences. I created flexible page systems for research areas, resources, training, news, people, and partner profiles, then implemented and refined each experience for accessibility, consistency, and ease of use across desktop and mobile.</p>
-                <p>I also designed the interactive AI tools directory, giving visitors a structured way to search and compare tools by writing stage while clearly communicating cost, privacy, and available evidence.</p>
+                <p>I owned the website's design and engineering from initial information architecture through production deployment. I translated stakeholder and research requirements into a responsive component system, then implemented the interface in React and TypeScript using Vinext's Next-compatible routing model and Vite-based build pipeline.</p>
+                <p>I developed reusable layouts for research areas, resource collections, events, news stories, team profiles, and partner organizations. Shared navigation and page-shell components provide consistent behavior across routes, including active-page states, semantic landmarks, keyboard-accessible controls, and mobile navigation.</p>
+                <p>For the AI-tools directory, I built a stateful search and writing-stage filter with React hooks and derived result sets. I also defined a relational Drizzle schema for tools, writing stages, resources, and people, including a many-to-many tool-to-writing-stage model and fields for privacy, bias, cost, infrastructure, evidence, and verification status.</p>
+                <p>I prepared the application for Cloudflare Workers and D1, configured server-side rendering and image optimization, and added automated tests that verify the homepage, primary routes, and organization profiles render successfully in the production worker environment. I also used Google Apps Script to automate newsletter signup handling and connect form submissions to the Center's subscriber workflow.</p>
             </div>
         </section>
 
         <div class="case-subsection">
-            <h3>A unified research platform</h3>
+            <h3>System architecture and delivery</h3>
             <div class="case-content">
-                <p>The design balances the credibility of a national research center with a welcoming editorial voice. A consistent visual system connects complex research questions, PapyrusAI, public resources, and organizational stories without flattening the purpose of each section.</p>
+                <p>The application separates reusable interface components, structured content, client-side interactions, database models, and worker infrastructure so each layer can evolve independently. This architecture supports a growing research center without requiring one-off page implementations as new tools, people, resources, events, and partner records are added.</p>
             </div>
         </div>
 
-        <section class="project-gallery writeai-gallery flashcard-gallery" data-flashcard-gallery aria-label="WRITE AI Center website screens">
-            <figure class="is-active"><img src="images/writeai/home.png" alt="WRITE AI Center homepage"><figcaption>Homepage introducing the Center's mission through an editorial layout and connected research themes</figcaption></figure>
-            <figure><img src="images/writeai/research.png" alt="WRITE AI Center research page"><figcaption>Research experience translating the Center's core questions into a clear, structured narrative</figcaption></figure>
-            <figure><img src="images/writeai/papyrus-ai.png" alt="WRITE AI Center PapyrusAI page"><figcaption>PapyrusAI feature page explaining the Center's scaffolded environment for writing instruction</figcaption></figure>
-            <figure><img src="images/writeai/ai-tools.png" alt="WRITE AI Center AI tools directory"><figcaption>Interactive AI tools directory with search, writing-stage filters, and evidence-focused comparison details</figcaption></figure>
+        <section class="project-gallery writeai-gallery flashcard-gallery" data-flashcard-gallery aria-label="WRITE AI Center platform features">
+            <figure class="is-active"><img src="images/writeai/home.png" alt="WRITE AI Center responsive homepage"><figcaption>Responsive homepage with reusable navigation, mission-driven content hierarchy, and linked research pathways</figcaption></figure>
+            <figure><img src="images/writeai/ai-tools.png" alt="WRITE AI Center AI tools directory filtered to PapyrusAI"><figcaption>Client-side AI-tools directory filtering records by search query and writing stage while exposing cost, privacy, and evidence fields</figcaption></figure>
+            <figure><img src="images/writeai/research.png" alt="WRITE AI Center detailed research question template"><figcaption>Reusable research template structuring complex study scope, infrastructure requirements, safety considerations, and expected outputs</figcaption></figure>
+            <figure><img src="images/writeai/papyrus-ai.png" alt="WRITE AI Center PapyrusAI product page"><figcaption>Product-focused route explaining PapyrusAI's LLM-supported writing environment and research context</figcaption></figure>
+            <figure><img src="images/writeai/profile.png" alt="Avni Doshi profile on the WRITE AI Center website"><figcaption>Dynamic team-profile route generated from structured people data and shared profile components</figcaption></figure>
             <div class="flashcard-controls">
                 <button type="button" data-gallery-previous aria-label="Show previous WRITE AI screen">&#8249;</button>
-                <span data-gallery-status aria-live="polite">1 of 4</span>
+                <span data-gallery-status aria-live="polite">1 of 5</span>
                 <button type="button" data-gallery-next aria-label="Show next WRITE AI screen">&#8250;</button>
             </div>
         </section>
 
         <section class="case-section">
             <h2>Tech Stack</h2>
-            <div class="tech-list"><span>Figma</span><span>React</span><span>TypeScript</span><span>Vinext</span><span>Vite</span><span>Cloudflare Workers</span><span>Drizzle ORM</span><span>Responsive Design</span><span>Accessibility</span></div>
+            <div class="tech-list"><span>Figma</span><span>React 19</span><span>TypeScript</span><span>Vinext</span><span>Vite</span><span>Cloudflare Workers</span><span>Cloudflare D1</span><span>Drizzle ORM</span><span>Google Apps Script</span><span>Server-Side Rendering</span><span>Accessible UI</span><span>Node Test Runner</span></div>
         </section>
     </main>
     <script src="gallery.js"></script>
